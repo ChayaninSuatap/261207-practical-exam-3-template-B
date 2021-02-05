@@ -13,13 +13,13 @@ function App() {
   return (
     <div className="card" style={{ width: 400 }}>
       <div className="card-content">
-        <p className="is-4 title has-text-centered">Add Person</p>
+        <p className="is-4 title has-text-centered">Add Pet</p>
         <div className="field">
           <label className="label">Name</label>
           <input
             className="input"
             type="text"
-            placeholder="e.q John Smith"
+            placeholder="e.q Coco"
             //update related state based on event
           ></input>
         </div>
@@ -37,17 +37,17 @@ function App() {
 
         <div className="field">
           <label className="label">Age</label>
-          <input className="input" type="number" placeholder="e.q Age"></input>
+          <input className="input" type="number" placeholder="e.q 5"></input>
         </div>
 
-        <button className="button is-primary is-fullwidth">Submit</button>
+        <button className="button is-danger is-fullwidth">Submit</button>
 
         <div className="mb-4"></div>
 
         {/* display tables for all persons */}
-        <p className="is-4 title has-text-centered">Person List</p>
+        <p className="is-4 title has-text-centered">Pet List</p>
         {/* sample table */}
-        <ItemTable name={"Bob"} gender={"Male"} age={"50"} />
+        <ItemTable name={"Coco"} gender={"Male"} age={"5"} />
         <p>Your name and code here</p>
       </div>
     </div>
